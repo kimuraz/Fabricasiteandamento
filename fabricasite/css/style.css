@@ -3,9 +3,9 @@ body, html {
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
+	background: #f5f5f5;
 }
-h1 {
-}
+
 h1 strong {
 	font-weight: 900;
 }
@@ -14,15 +14,16 @@ h2 {
 	font-size: 32px;
 	font-weight: 700;
 	margin: 0;
-	color: #555;
+	color: #ffa726;
 }
 h3 {
 	font-size: 16px;
 	font-weight: 700;
+	color: #ffb74d;
 }
 h4 {
 	font-size: 20px;
-	color: #666;
+	color: #ffb74d;
 }
 h5 {
 	text-transform: uppercase;
@@ -58,8 +59,7 @@ a:hover, a:focus {
 }
 ul, ol {
 	padding: 0;
-	webkit-padding: 0;
-	moz-padding: 0;
+	padding: 0;
 	list-style: none;
 }
 hr {
@@ -67,14 +67,16 @@ hr {
 	width: 80px;
 	text-align: center;
 	position: relative;
-	background: #222;
+	background: #616161;
 	border: 0;
 	margin: 10px auto 30px;
 }
+
 /* Navigation */
 #menu {
 	padding: 20px;
 	transition: all 0.8s;
+	
 }
 #menu.navbar-default {
 	background-color: rgba(248, 248, 248, 0);
@@ -93,7 +95,7 @@ hr {
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #eeeeee;
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
@@ -117,6 +119,7 @@ hr {
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #111;
 }
+
 /* Home Style */
 header {
 	background: url(../img/header.jpeg) no-repeat bottom right ;
@@ -124,7 +127,6 @@ header {
 	-moz-opacity: 0.35;
 	filter: alpha(opacity=70);
 	background-size: cover;
-	color: black;
 	position: relative;
 	height: 100%;
 }
@@ -132,6 +134,11 @@ header p {
 	color:#eee ;
 	font-size: 45px;
 	margin-bottom: 80px;
+}
+.glass{
+	background: rgba(0, 0, 0, 0.4);	
+	position: relative;
+	height: 100%;
 }
 .intro-text {
 	position: relative;
@@ -191,13 +198,20 @@ header p {
 ul.cat li {
 	display: inline-block;
 }
+
 ol.type li {
 	display: inline-block;
 	margin-left: 20px;
 }
+@media (max-width: 768px) {
+	ol.type li {
+		display: block;
+		margin: 40px;
+	}
+}
 ol.type li a {
-	color: #aaa;
-	border: 1px solid #ddd;
+	color: #777;
+	border: 1px solid #ccc;
 	padding: 8px 16px;
 	border-radius: 0;
 }
@@ -210,10 +224,10 @@ ol.type li a:hover {
 	border: 1px solid #333;
 }
 .isotope-item {
-	z-index: 2
+	z-index: 2;
 }
 .isotope-hidden.isotope-item {
-	z-index: 1
+	z-index: 1;
 }
 .isotope, .isotope .isotope-item {
 	/* change duration value to whatever you like */
@@ -269,8 +283,7 @@ ol.type li a:hover {
 }
 .hover-bg:hover .hover-text>h4 {
 	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
+	backface-visibility: hidden;
 	transform: translateY(0);
 }
 .hover-bg .hover-text>i {
@@ -281,8 +294,7 @@ ol.type li a:hover {
 }
 .hover-bg:hover .hover-text>i {
 	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(100%);
+	backface-visibility: hidden;
 	transform: translateY(100%);
 }
 .hover-bg:hover .hover-text {
@@ -322,7 +334,7 @@ img.img-circle.team-img {
 	transition: all 0.5s;
 }
 #team-section .team .thumbnail:hover>img.img-circle.team-img {
-	border: 4px solid #fff;
+	border: 4px solid #ffb74d;
 	font-size: medium;
 }
 
@@ -341,9 +353,10 @@ margin: 0 8px;
 	font-size: 30px;
 	padding: 4px 5px;
 	transition: all 0.5s;
+	color: #666;
 }
 #team-section .thumbnail i.fa:hover{
-	color: #666;
+	color: #ffb74d;
 }
 
 /* Achivements Section */
@@ -456,7 +469,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	transition: all 0.5s;
 }
 #social-section .social i.fa:hover {
-	color: #666;
+	color: #ffb74d;
 }
 /* Footer */
 #footer {
